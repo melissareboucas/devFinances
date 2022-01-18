@@ -93,7 +93,7 @@
                             placeholder="R$ 0,00"
                         >
                         <small class="help">
-                            Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais 
+                            Use o sinal "-"" (negativo) para despesas e "","" (vírgula) para casas decimais 
                         </small>
                     </div>
 
@@ -102,9 +102,12 @@
                             class="sr-only"
                             for="date">Data</label>
                         <input 
-                            type="date"
+                            type="text"
                             id="date"
-                            name="date"                        >
+                            name="date"  
+                            placeholder="dd/mm/aaaa" 
+                            onfocus="(this.type='date')"
+                        >
                     </div>
 
                     <div class="input-group actions">
